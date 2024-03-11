@@ -6,8 +6,8 @@ var bitcore = module.exports;
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   if (version !== undefined) {
-    var message = 'More than one instance of dashcore-lib found. ' +
-      'Please make sure that you are not mixing instances of classes of the different versions of dashcore.';
+    var message = 'More than one instance of neobytescore-lib found. ' +
+      'Please make sure that you are not mixing instances of classes of the different versions of neobytescore.';
     console.warn(message);
   }
 };
@@ -65,6 +65,7 @@ bitcore.deps.bs58 = require('bs58');
 bitcore.deps.Buffer = Buffer;
 bitcore.deps.elliptic = require('elliptic');
 bitcore.deps._ = require('lodash');
+bitcore.deps.scryptsy = require('scryptsy');
 
 // Internal usage, exposed for testing/advanced tweaking
 bitcore.Transaction.sighash = require('./lib/transaction/sighash');
