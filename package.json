@@ -1,7 +1,7 @@
 {
-  "name": "bitcore-lib-dash",
-  "version": "0.13.19",
-  "description": "A pure and powerful JavaScript Dash library.",
+  "name": "bitcore-lib-neobytes",
+  "version": "0.13.20",
+  "description": "A pure and powerful JavaScript NeoBytes library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -58,10 +58,14 @@
     {
       "name": "UdjinM6",
       "email": "UdjinM6@gmail.com"
+    },
+    {
+      "name": "SikkieNL",
+      "email": "sikkienl@outlook.com"
     }
   ],
   "keywords": [
-    "dash",
+    "neobytes",
     "transaction",
     "address",
     "p2p",
@@ -78,8 +82,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashpay/bitcore-lib-dash.git"
+    "url": "https://github.com/neobytes-project/bitcore-lib-neobytes.git"
   },
+  "bugs": {
+    "url": "https://github.com/neobytes-project/bitcore-lib-neobytes/issues"
+  },
+  "homepage": "https://github.com/neobytes-project/bitcore-lib-neobytes",
   "browser": {
     "request": "browser-request"
   },
@@ -90,11 +98,10 @@
     "elliptic": "=3.0.3",
     "inherits": "=2.0.1",
     "lodash": "=3.10.1",
-    "sha512": "=0.0.1",
-    "x11-hash-js": "^1.0.0"
+    "scryptsy": "=2.0.0"
   },
   "devDependencies": {
-    "bitcore-build-dash": "dashpay/bitcore-build-dash",
+    "bitcore-build-neobytes": "neobytes-project/bitcore-build-neobytes",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
