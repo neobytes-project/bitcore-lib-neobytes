@@ -155,16 +155,16 @@ describe('MerkleBlock', function() {
   describe('#hasTransaction', function() {
 
     it('should find transactions via hash string', function() {
-      var jsonData = data.JSON[1];
-      var txId = new Buffer(jsonData.hashes[2],'hex').toString('hex');
+      var jsonData = data.JSON[0];
+      var txId = new Buffer(jsonData.hashes[1],'hex').toString('hex');
       var b = MerkleBlock(jsonData);
       b.hasTransaction(txId).should.equal(true);
       b.hasTransaction(txId + 'abcd').should.equal(false);
     });
 
     it('should find transactions via Transaction object', function() {
-      var jsonData = data.JSON[1];
-      var txBuf = new Buffer(data.TXHEX[0][1],'hex');
+      var jsonData = data.JSON[0];
+      var txBuf = new Buffer(data.TXHEX[0][0],'hex');
       var tx = new Transaction().fromBuffer(txBuf);
       var b = MerkleBlock(jsonData);
       b.hasTransaction(tx).should.equal(true);
@@ -179,7 +179,7 @@ describe('MerkleBlock', function() {
     });
 
     it('should not match with merkle nodes', function() {
-      var b = MerkleBlock(data.JSON[1]);
+      var b = MerkleBlock(data.JSON[0]);
 
       var hashData = [
         ['9d0a368bc9923c6cb966135a4ceda30cc5f259f72c8843ce015056375f8a06ec', false],
