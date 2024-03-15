@@ -84,10 +84,6 @@
     "type": "git",
     "url": "https://github.com/neobytes-project/bitcore-lib-neobytes.git"
   },
-  "bugs": {
-    "url": "https://github.com/neobytes-project/bitcore-lib-neobytes/issues"
-  },
-  "homepage": "https://github.com/neobytes-project/bitcore-lib-neobytes",
   "browser": {
     "request": "browser-request"
   },
