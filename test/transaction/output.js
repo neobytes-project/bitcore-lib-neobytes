@@ -178,7 +178,7 @@ describe('Output', function() {
     });
     should.equal(output.script, null);
   });
-
+  
   it('should throw an error if Script throws an error that is not InvalidBuffer', function() {
     var output = Output({
       satoshis: 1000,
@@ -188,5 +188,5 @@ describe('Output', function() {
       output.setScriptFromBuffer('bad');
     }).should.throw('Invalid hex string');
   });
-
+  
 });
