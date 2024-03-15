@@ -1,6 +1,6 @@
 {
-  "name": "bitcore-lib-dash",
-  "version": "0.13.19",
+  "name": "bitcore-lib-neobytes",
+  "version": "0.13.20",
   "dependencies": {
     "bn.js": {
       "version": "2.0.4",
@@ -44,15 +44,10 @@
       "from": "lodash@=3.10.1",
       "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
     },
-    "sha512": {
-      "version": "0.0.1",
-      "from": "sha512@=0.0.1",
-      "resolved": "https://registry.npmjs.org/sha512/-/sha512-0.0.1.tgz"
-    },
-    "x11-hash-js": {
-      "version": "1.0.0",
-      "from": "x11-hash-js@*",
-      "resolved": "https://registry.npmjs.org/x11-hash-js/-/x11-hash-js-1.0.0.tgz"
+    "scryptsy": {
+      "version": "2.0.0",
+      "from": "scryptsy@2.0.0",
+      "resolved": "https://registry.npmjs.org/scryptsy/-/scryptsy-2.0.0.tgz"
     }
   }
 }
