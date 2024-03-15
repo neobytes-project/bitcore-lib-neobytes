@@ -17,18 +17,16 @@ describe('Networks', function() {
 
   it('will enable/disable regtest Network', function() {
     networks.enableRegtest();
-    networks.testnet.networkMagic.should.deep.equal(new Buffer('fcc1b7dc', 'hex'));
-    networks.testnet.port.should.equal(19994);
+    networks.testnet.networkMagic.should.deep.equal(new Buffer('4c756e61', 'hex'));
+    networks.testnet.port.should.equal(12437);
     networks.testnet.dnsSeeds.should.deep.equal([]);
     networks.testnet.regtestEnabled.should.equal(true);
 
     networks.disableRegtest();
-    networks.testnet.networkMagic.should.deep.equal(new Buffer('cee2caff', 'hex'));
-    networks.testnet.port.should.equal(19999);
+    networks.testnet.networkMagic.should.deep.equal(new Buffer('536e6f77', 'hex'));
+    networks.testnet.port.should.equal(12427);
     networks.testnet.dnsSeeds.should.deep.equal([
-     'testnet-seed.darkcoin.io',
-     'testnet-seed.dashdot.io',
-     'test.dnsseed.masternode.io'
+     'testnet-seed.neobytes.tools'
     ]);
   });
 
@@ -74,7 +72,7 @@ describe('Networks', function() {
   it('should not set a network map for an undefined value', function() {
     var custom = {
       name: 'somenet',
-      pubkeyhash: 0x14,
+      pubkeyhash: 0x16,
       privatekey: 0x93,
       scripthash: 0x11,
       xpubkey: 0x0278b20f,
@@ -101,14 +99,14 @@ describe('Networks', function() {
   });
 
   it('tests only for the specified key', function() {
-    expect(networks.get(0x8c, 'pubkeyhash')).to.equal(networks.testnet);
-    expect(networks.get(0x8c, 'privatekey')).to.equal(undefined);
+    expect(networks.get(0x70, 'pubkeyhash')).to.equal(networks.testnet);
+    expect(networks.get(0x70, 'privatekey')).to.equal(undefined);
   });
 
   it('can test for multiple keys', function() {
-    expect(networks.get(0x8c, ['pubkeyhash', 'scripthash'])).to.equal(networks.testnet);
-    expect(networks.get(0x13, ['pubkeyhash', 'scripthash'])).to.equal(networks.testnet);
-    expect(networks.get(0x8c, ['privatekey', 'port'])).to.equal(undefined);
+    expect(networks.get(0x70, ['pubkeyhash', 'scripthash'])).to.equal(networks.testnet);
+    expect(networks.get(0x12, ['pubkeyhash', 'scripthash'])).to.equal(networks.testnet);
+    expect(networks.get(0x70, ['privatekey', 'port'])).to.equal(undefined);
   });
 
   it('converts to string using the "name" property', function() {
