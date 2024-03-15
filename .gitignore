@@ -1,4 +1,5 @@
 *.swp
+.idea
 coverage
 node_modules
 browser/tests.js
@@ -21,3 +22,5 @@ bitcore.min.js
 bitcore.js.sig
 bitcore.min.js.sig
 tests.js
+
+launch.json
