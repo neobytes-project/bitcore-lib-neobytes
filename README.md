@@ -1,7 +1,7 @@
-Bitcore-NeoBytes Library
+NeoBytes Library
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-lib-neobytes.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-lib-neobytes)
+[![NPM Package](https://img.shields.io/npm/v/neobytes-lib.svg?style=flat-square)](https://www.npmjs.org/package/neobytes-lib)
 
 A pure and powerful JavaScript NeoBytes library.
 
@@ -10,87 +10,100 @@ A pure and powerful JavaScript NeoBytes library.
 NeoBytes is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the NeoBytes network allows for highly resilient neobytes infrastructure, and the developer community needs reliable, open-source tools to implement neobytes apps and services.
 
 ## Get Started
-
+### NodeJS
 ```
-npm install bitcore-lib-neobytes
-```
-
-```
-bower install bitcore-lib-neobytes
+npm install neobytes-lib
 ```
 
-## Documentation
+## Browser
 
-The complete docs are hosted here: [bitcore documentation](http://bitcore.io/guide/). There's also a [bitcore API reference](http://bitcore.io/api/) available generated from the JSDocs of the project, where you'll find low-level details on each bitcore utility.
+See the section below to generate your own bundle, or download the pre-generated [minified file](dist/neobytes-lib.min.js)
 
-- [Read the Developer Guide](http://bitcore.io/guide/)
-- [Read the API Reference](http://bitcore.io/api/)
 
-To get community assistance and ask for help with implementation questions, please use our [community forums](https://forum.bitcore.io/).
+## Docs
+
+* [Addresses](docs/address.md)
+* [Block](docs/block.md)
+* [Crypto](docs/crypto.md)
+* [Encoding](docs/encoding.md)
+* [Hierarchically-derived Private and Public Keys](docs/hierarchical.md)
+* [Networks](docs/networks.md)
+* [PrivateKey](docs/privatekey.md)
+* [PublicKey](docs/publickey.md)
+* [Script](docs/script.md)
+* [Transaction](docs/transaction.md)
+* [Using Different Units](docs/unit.md)
+* [Unspent Output](docs/unspentoutput.md)
+* [URI](docs/uri.md)
+* [Governance Object / Proposal](docs/govobject/govobject.md)
 
 ## Examples
 
-* [Generate a random address](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#generate-a-random-address)
-* [Generate a address from a SHA256 hash](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#generate-a-address-from-a-sha256-hash)
-* [Import an address via WIF](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#import-an-address-via-wif)
-* [Create a Transaction](https://github.com/neobytes-project/bitcore-lib/blob/master/docs/examples.md#create-a-transaction)
-* [Sign a Bitcoin message](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#sign-a-bitcoin-message)
-* [Verify a Bitcoin message](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#verify-a-bitcoin-message)
-* [Create an OP RETURN transaction](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#create-an-op-return-transaction)
-* [Create a 2-of-3 multisig P2SH address](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
-* [Spend from a 2-of-2 multisig P2SH address](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
+Some examples can be found [here](docs/examples.md), below is a list of direct links for some of them.
 
 
-## Security
+* [Generate a random address](docs/examples.md#generate-a-random-address)
+* [Generate an address from a SHA256 hash](docs/examples.md#generate-a-address-from-a-sha256-hash)
+* [Import an address via WIF](docs/examples.md#import-an-address-via-wif)
+* [Create a Transaction](docs/examples.md#create-a-transaction)
+* [Sign a NeoBytes message](docs/examples.md#sign-a-bitcoin-message)
+* [Verify a NeoBytes message](docs/examples.md#verify-a-bitcoin-message)
+* [Create an OP RETURN transaction](docs/examples.md#create-an-op-return-transaction)
+* [Create a 2-of-3 multisig P2SH address](docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
+* [Spend from a 2-of-2 multisig P2SH address](docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
 
-We're using Bitcore in production, as are [many others](http://bitcore.io#projects), but please use common sense when doing anything related to finances! We take no responsibility for your implementation decisions.
+## Modules
 
-If you find a security issue, please email security@bitpay.com.
+Some functionality is implemented as a module that can be installed separately:
+
 
 ## Contributing
 
-Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/CONTRIBUTING.md) file.
+Please send pull requests for bug fixes, code optimization, and ideas for improvement. For more information on how to contribute, please refer to our [CONTRIBUTING](https://github.com/neobytes-project/neobytes-lib/blob/master/CONTRIBUTING.md) file.
 
 ## Building the Browser Bundle
 
-To build a bitcore-lib-neobytes full bundle for the browser:
+To build a neobytes-lib full bundle for the browser:
 
 ```sh
-gulp browser
+npm run build
 ```
 
-This will generate files named `bitcore-lib-neobytes.js` and `bitcore-lib-neobytes.min.js`.
+This will generate files named `neobytes-lib.js` and `neobytes-lib.min.js` in the `dist/` folder.
 
-You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/neobytes-project/bitcore-lib-neobytes/commit/e33b6e3ba6a1e5830a079e02d949fce69ea33546 for v0.12.6).
+## Usage on Browser
 
-To verify signatures, use the following PGP keys:
-- @braydonf: https://pgp.mit.edu/pks/lookup?op=get&search=0x9BBF07CAC07A276D `D909 EFE6 70B5 F6CC 89A3 607A 9BBF 07CA C07A 276D`
-- @gabegattis: https://pgp.mit.edu/pks/lookup?op=get&search=0x441430987182732C `F3EA 8E28 29B4 EC93 88CB  B0AA 4414 3098 7182 732C`
-- @kleetus: https://pgp.mit.edu/pks/lookup?op=get&search=0x33195D27EF6BDB7F `F8B0 891C C459 C197 65C2 5043 3319 5D27 EF6B DB7F`
-- @matiu: https://pgp.mit.edu/pks/lookup?op=get&search=0x9EDE6DE4DE531FAC `25CE ED88 A1B1 0CD1 12CD  4121 9EDE 6DE4 DE53 1FAC`
-
+```
+<script src='./dist/dashcore-lib.min.js' type="text/javascript"></script>
+<script>
+  const PrivateKey = dashcore.PrivateKey;
+  const privateKey = new PrivateKey();
+  const address = privateKey.toAddress().toString();
+</script>
+```
 
 ## Development & Tests
 
 ```sh
-git clone https://github.com/neobytes-project/bitcore-lib-neobytes
-cd bitcore-lib-neobytes
+git clone https://github.com/neobytes-project/neobytes-lib
+cd neobytes-lib
 npm install
 ```
 
 Run all the tests:
 
 ```sh
-gulp test
+npm test
 ```
 
-You can also run just the Node.js tests with `gulp test:node`, just the browser tests with `gulp test:browser`
-or create a test coverage report (you can open `coverage/lcov-report/index.html` to visualize it) with `gulp coverage`.
+You can also run just the Node.js tests with `npm run test:node`, just the browser tests with `npm run test:browser`
+or run a test coverage report with `npm run coverage`.
 
 ## License
 
-Code released under [the MIT license](https://github.com/neobytes-project/bitcore-lib-neobytes/blob/master/LICENSE).
+Code released under [the MIT license](LICENSE).
 
-Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
-Copyright 2016 The Dash Foundation, Inc.
-Copyright 2024 The NeoBytes Core Developers.
+Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.  
+Copyright 2016-2017 The Dash Foundation, Inc.  
+Copyright 2017-2018 Dash Core Group, Inc.  
+Copyright 2024 NeoBytes Core Developers.  

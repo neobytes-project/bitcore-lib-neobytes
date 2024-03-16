@@ -30,7 +30,14 @@ describe('Random', function() {
         }
       }
     });
-
   });
 
+  describe('@getPseudoRandomBuffer', function() {
+        it('should return a buffer', function() {
+          var bytes = Random.getPseudoRandomBuffer(8);
+          bytes.length.should.equal(8);
+
+          Buffer.isBuffer(bytes).should.equal(true);
+        });      
+  });
 });
