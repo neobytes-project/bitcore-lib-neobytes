@@ -31,9 +31,9 @@ var livenet = new Network();
 _.extend(livenet, {
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x00,
-  privatekey: 0x80,
-  scripthash: 0x05,
+  pubkeyhash: 0x35,
+  privatekey: 0xb5,
+  scripthash: 0x15,
   xpubkey:  0x0488b21e,
   xprivkey: 0x0488ade4,
   port: 8333
@@ -43,9 +43,9 @@ var testnet = new Network();
 _.extend(testnet, {
   name: 'testnet',
   alias: 'testnet',
-  pubkeyhash: 0x6f,
-  privatekey: 0xef,
-  scripthash: 0xc4,
+  pubkeyhash: 0x70,
+  privatekey: 0xf0,
+  scripthash: 0x12,
   xpubkey: 0x043587cf,
   xprivkey: 0x04358394,
   port: 18333
