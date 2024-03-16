@@ -60,6 +60,14 @@
       "email": "UdjinM6@gmail.com"
     },
     {
+      "name": "Jon Kindel",
+      "email": "jon@dash.org"
+    },
+    {
+      "name": "Alex Werner",
+      "email": "alex@werner.fr"
+    },
+    {
       "name": "SikkieNL",
       "email": "sikkienl@outlook.com"
     }
@@ -84,6 +92,10 @@
     "type": "git",
     "url": "https://github.com/neobytes-project/bitcore-lib-neobytes.git"
   },
+  "bugs": {
+    "url": "https://github.com/neobytes-project/bitcore-lib-neobytes/issues"
+  },
+  "homepage": "https://github.com/neobytes-project/bitcore-lib-neobytes",
   "browser": {
     "request": "browser-request"
   },
@@ -93,16 +105,16 @@
     "buffer-compare": "=1.0.0",
     "elliptic": "=3.0.3",
     "inherits": "=2.0.1",
-    "lodash": "=3.10.1",
+    "lodash": "^4.17.11",
     "scryptsy": "=2.0.0"
   },
   "devDependencies": {
     "bitcore-build-neobytes": "neobytes-project/bitcore-build-neobytes",
     "browserify": "latest",
-    "brfs": "^1.2.0",
+    "brfs": "^2.0.1",
     "chai": "^1.10.0",
-    "gulp": "^3.8.10",
-    "sinon": "^1.13.0"
+    "gulp": "^4.0.0",
+    "sinon": "^4.2.2"
   },
   "license": "MIT"
 }
