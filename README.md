@@ -1,7 +1,7 @@
 NeoBytes Library
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/neobytes-lib.svg?style=flat-square)](https://www.npmjs.org/package/neobytes-lib)
+[![NPM Package](https://img.shields.io/npm/v/@neobytes/neobytes-lib.svg?style=flat-square)](https://www.npmjs.org/package/@neobytes/neobytes-lib)
 
 A pure and powerful JavaScript NeoBytes library.
 
@@ -12,7 +12,7 @@ NeoBytes is a powerful new peer-to-peer platform for the next generation of fina
 ## Get Started
 ### NodeJS
 ```
-npm install neobytes-lib
+npm install @neobytes/neobytes-lib
 ```
 
 ## Browser
@@ -56,6 +56,8 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 
 Some functionality is implemented as a module that can be installed separately:
 
+* [Peer to Peer Networking](https://github.com/neobytes-project/neobytes-p2p)
+* [NeoBytes Core JSON-RPC](https://github.com/neobytes-project/neobytesd-rpc)
 
 ## Contributing
 
