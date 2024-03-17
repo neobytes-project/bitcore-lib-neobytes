@@ -1,8 +1,8 @@
 {
-  "name": "neobytes-lib",
-  "main": "./neobytes-lib.min.js",
+  "name": "bitcore-lib-neobytes",
+  "main": "./bitcore-lib-neobytes.min.js",
   "version": "0.15.3",
-  "homepage": "https://github.com/neobytes-project/neobytes-lib",
+  "homepage": "https://github.com/neobytes-project/bitcore-lib-neobytes",
   "authors": [
     "NeoBytes", "BitPay, Inc."
   ],
