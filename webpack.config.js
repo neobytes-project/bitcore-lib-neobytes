@@ -13,7 +13,7 @@ const rawConfig = Object.assign({}, commonJSConfig, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'neobytes-lib.js',
-    library: 'neobytes core',
+    library: 'neobytes-core',
     libraryTarget: 'umd',
   }
 });
@@ -21,7 +21,7 @@ const uglifiedConfig = Object.assign({}, commonJSConfig, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'neobytes-lib.min.js',
-    library: 'neobytes core',
+    library: 'neobytes-core',
     libraryTarget: 'umd',
   },
   plugins: [
