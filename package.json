@@ -1,5 +1,5 @@
 {
-  "name": "neobytes-lib",
+  "name": "@neobytes/neobytes-lib",
   "version": "0.15.7",
   "description": "A pure and powerful JavaScript NeoBytes library.",
   "author": "BitPay <dev@bitpay.com>",
@@ -88,7 +88,8 @@
     "bip37",
     "bip69",
     "bip70",
-    "multisig"
+    "multisig",
+    "neobytes-core"
   ],
   "repository": {
     "type": "git",
