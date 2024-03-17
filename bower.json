@@ -2,7 +2,7 @@
   "name": "neobytes-lib",
   "main": "./neobytes-lib.min.js",
   "version": "0.15.3",
-  "homepage": "http://github.com/neobytes-project/neobytes-lib",
+  "homepage": "https://github.com/neobytes-project/neobytes-lib",
   "authors": [
     "NeoBytes", "BitPay, Inc."
   ],
